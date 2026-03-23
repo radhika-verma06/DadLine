@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--gold:#C8962A;--gold-light:#F0C866;--midnight:#060E16;--navy:#0D1B2A;--text-1:#EEE8D5;--text-2:#C8C0B0;--text-3:#8A8070;--success:#4CAF82;--warning:#E8855A;--info:#6496E8}
+*,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+html{height:100%;overflow:hidden}
+body{height:100%;overflow:hidden;background:var(--midnight);color:var(--text-1);font-family:'DM Sans',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+#root{height:100%;display:flex;flex-direction:column}
+.scroll-y{overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain}
+::-webkit-scrollbar{display:none}
+@keyframes breathe{0%,100%{transform:scaleY(1) scaleX(1)}50%{transform:scaleY(1.013) scaleX(0.999)}}
+.breathe{animation:breathe 4.5s ease-in-out infinite;transform-origin:bottom center}
+@keyframes ring-pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.8;transform:scale(1.05)}}
+.ring-pulse{animation:ring-pulse 4s ease-in-out infinite}
+.ring-pulse-2{animation:ring-pulse 4s ease-in-out infinite;animation-delay:.55s}
+@keyframes page-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.page-in{animation:page-in .3s cubic-bezier(.22,1,.36,1)}
+@keyframes pop{0%{transform:scale(.92);opacity:0}70%{transform:scale(1.04)}100%{transform:scale(1);opacity:1}}
+.pop{animation:pop .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.float{animation:float 5s ease-in-out infinite}
+@keyframes slide-up{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.slide-up{animation:slide-up .32s cubic-bezier(.22,1,.36,1)}
