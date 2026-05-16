@@ -67,3 +67,86 @@ A minimal distraction interface for deep work sessions.
 ```bash
 git clone https://github.com/radhika-verma06/DadLine.git
 cd DadLine
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+DadLine/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 💡 Problem DadLine Solves
+
+Traditional to-do apps often treat every task equally. DadLine is designed around the idea that deadlines, urgency, and workload should guide what users focus on first.
+
+The goal is not just to track tasks, but to help users:
+- prioritise important work
+- reduce deadline stress
+- plan work more realistically
+- stay consistent with execution
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] AI-generated weekly study plans
+- [ ] Calendar integration
+- [ ] Google Tasks or Notion sync
+- [ ] Pomodoro timer
+- [ ] Collaborative workspaces
+- [ ] Workload prediction
+- [ ] Mobile-responsive enhancements
+
+---
+
+## 🚀 Deployment
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The project can be deployed on platforms such as Vercel, Netlify, or GitHub Pages.
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+### Developed by Radhika Verma  
+AI Student | Full-Stack AI Projects | Human-Centered AI Systems
